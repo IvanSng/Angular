@@ -1,0 +1,8 @@
+<!-- <h1>Hola Mundo</h1> -->
+<header class="alert alert-primary text-center mb-0">
+  <h1 class="display-1">{{titulo | uppercase}}</h1>
+  <h2 class="display-3">{{subtitulo | titlecase | slice:0:contador}}</h2>
+</header>
+<div class="text-end text-light bg-black p-2">
+  {{fecha | date: "dd/MM/yyyy"}}
+</div>
