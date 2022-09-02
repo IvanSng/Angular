@@ -1,0 +1,28 @@
+<form [formGroup]="form" (submit)="submitForm()">
+    <legend>Datos del Empleado</legend>
+
+    Nombre:
+    <input class="form-control" type="text" formControlName="nombre">
+    <div class="text-end text-danger" *ngIf="!form.controls['nombre'].valid">
+        {{form.controls['nombre'].errors | json}}
+    </div>
+    Documento:
+    <div class="input-group">
+        <input class="form-control" type="number" formControlName="documento">
+        <button type="button" class="btn btn-outline-primary" (click)="buscar()">Buscar</button>
+    </div>
+    Mail:
+    <input class="form-control" type="text" formControlName="mail">
+    <div *ngIf="form.controls['mail'].errors?.['required']" class="text-danger text-end">Debe ingresar el correo</div>
+    <div class="text-danger text-end">
+        {{form.controls['mail'].errors | json}}
+    </div>
+
+    <button class="btn btn-success w-100 mt-2">Enviar</button>
+
+</form>
+
+<div>
+    <h3>Debug Info</h3>
+    <div>Valor: {{form.value | json}} </div>
+</div>
