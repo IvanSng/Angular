@@ -1,0 +1,18 @@
+{
+  "turnos": [
+    {
+      "nombre": "Ivan",
+      "especialidad": "Odontologo",
+      "desde": "2022-09-02T17:00:00.000Z",
+      "hasta": "2022-09-02T17:10:00.000Z",
+      "id": 1
+    },
+    {
+      "id": 2,
+      "nombre": "Tomy",
+      "especialidad": "Veterinario",
+      "desdeDia": "2022-09-10T03:00:00.000Z",
+      "hastaDia": "2022-09-10T03:10:00.000Z"
+    }
+  ]
+}
