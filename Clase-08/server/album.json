@@ -1,0 +1,25 @@
+{
+  "jugadores": [
+    {
+      "id": 1,
+      "jugador": "Messiiii",
+      "pais": "Argentina",
+      "dorsal": 10,
+      "imagen": "./assets/Messi.jpg"
+    },
+    {
+      "id": 2,
+      "jugador": "Mbappe",
+      "pais": "Francia",
+      "dorsal": 10,
+      "imagen": "./assets/Mbappe.jpg"
+    },
+    {
+      "id": 3,
+      "jugador": "Cristiano Ronaldo",
+      "pais": "Portugal",
+      "dorsal": 10,
+      "imagen": "./assets/CristianoRonaldo.jpg"
+    }
+  ]
+}

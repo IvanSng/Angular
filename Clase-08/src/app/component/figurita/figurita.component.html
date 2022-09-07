@@ -1,0 +1,19 @@
+<form [formGroup]="form" (ngSubmit)="submit()">
+    <legend class="alert alert-danger text-center">Datos de la figurita</legend>
+
+    <div class="row">
+        <div class="col-3">
+            <img style="width: 200px; height:250px" [src]="form.value.imagen">
+        </div>
+
+        <div class="col-9">
+            Nombre:
+            <input type="text" class="form-control" formControlName="jugador">
+            Pais:
+            <input type="text" class="form-control" formControlName="pais">
+            Dorsal:
+            <input type="text" class="form-control" formControlName="dorsal">
+            <button class="btn btn-success w-100 mt-2">Actualizar figurita</button>
+        </div>
+    </div>
+</form>
